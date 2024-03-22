@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+body {
+  font-family: Arial;
+  color: rgb(0, 0, 0);
+}
+
+.split {
+  height: 100%;
+  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  width: 70%;
+  background-color:  rgb(234, 240, 254);
+}
+
+.right {
+  right: 0;
+  width: 30%;
+  background-color:#ffffff;
+  padding-left: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.centered img {
+    width: 800px;
+            height: 500px;
+            
+}
+
+    .logo {
+  width: 100px; 
+  height: 100px; 
+}
+.split form{
+    margin:20px;
+    
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <h1 style="font-weight: bold;">Late Dr.M.V.Govilkar Rugna Seva Sadan</h1>
+    <img src="edit pic.png" alt="medical">
+    
+  </div>
+</div>
+
+<div class="split right">
+    <img class="logo" src="logo1.png" alt="logo1">
+    <form>
+            <h1>Welcome!</h1>
+            <div style="color: rgb(139, 139, 139);">
+            Enter your account credentials to sign in
+            <br><br>
+            <label for="inputemail" class="form-labelemail">Email address</label>
+            <div class="input-group mb-3" >
+                <span class="input-group-text" style="background-color: #ffffff; border-right:none;">
+                    <i class="bi bi-person"></i>
+                </span>
+                <input type="email" id="email" class="form-control" placeholder="Ex: abc@gmail.com" style="border-left: #ffffff;">
+              </div>
+            <br>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <div class="input-group mb-3" >
+                <span class="input-group-text" style="background-color: #ffffff; border-right:none;">
+                    <i class="bi bi-lock-fill"></i>
+                </span>
+                <input type="password" id="Password" class="form-control" placeholder=". . . . . . . " style="border-left: #ffffff;">
+              </div>
+            
+            <br><br>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button type="button" style="background-color: rgb(139,92,246); height:40px; border: #ffffff; color: #ffffff; "  onclick="f1()">Sign in</button>
+          </div>
+    </form>
+    <hr style="width: 350px;">
+    <br>
+    <p style="text-align:center ;">&copy; 2024 All rights reserved.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+<script>
+  function f1()
+  {
+    var a = document.getElementById("email").value;
+    var b = document.getElementById("Password").value;
+    if (a === "vishalkmore2121@gmail.com" && b === "vishal123") {
+       alert("Login Successful...");
+       window.location.href = "Dashboard.html";
+    } else {
+      alert("Login failed...");
+    }
+  }
+</script>
+</body>
+</html>
